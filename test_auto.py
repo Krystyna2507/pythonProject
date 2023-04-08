@@ -112,19 +112,15 @@ kbtnadd3.click()
 time.sleep(5)
 
 # додавання витрат2:
-kaddanexpence = driver.find_element(By.XPATH,
-                                    "/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-fuel-expenses/div/div[1]/div/button")
+kaddanexpence = driver.find_element(By.XPATH, "/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-fuel-expenses/div/div[1]/div/button")
 kaddanexpence.click()
-kmileage2 = driver.find_element(By.XPATH,
-                                "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[3]/div[1]/input")
+kmileage2 = driver.find_element(By.XPATH, "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[3]/div[1]/input")
 time.sleep(3)
 kmileage2.clear()
 kmileage2.send_keys("1000")
-knumber = driver.find_element(By.XPATH,
-                              "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[4]/div[1]/input")
+knumber = driver.find_element(By.XPATH, "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[4]/div[1]/input")
 knumber.send_keys("50")
-kcoast = driver.find_element(By.XPATH,
-                             "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[5]/div[1]/input")
+kcoast = driver.find_element(By.XPATH, "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[2]/app-add-expense-form/form/div[5]/div[1]/input")
 kcoast.send_keys("80")
 kbtnadd4 = driver.find_element(By.XPATH, "/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[3]/button[2]")
 kbtnadd4.click()
